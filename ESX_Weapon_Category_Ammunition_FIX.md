@@ -5,6 +5,8 @@
 * This is only tested with ESX 1.9.3
 * Other versions might work...
 
+Yo
+
 ## Installation
 ### Clientside
 * Go to `es_extended/server/main.lua` and search for `esx:updateWeaponAmmo` Event.
