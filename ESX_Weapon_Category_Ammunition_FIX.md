@@ -1,5 +1,5 @@
 ## Description
-* You can have now more pistols or rifles than only one with seperate ammunition
+* You can now have more pistols or rifles than only one with seperate ammunition
 
 **IMPORTANT**
 * This is only tested with ESX 1.9.3
