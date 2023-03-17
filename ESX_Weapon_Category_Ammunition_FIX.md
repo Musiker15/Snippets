@@ -5,7 +5,7 @@
 * This is only tested with ESX 1.9.3
 * Other versions might work...
 
-Yo
+You can remove the prints :)
 
 ## Installation
 ### Clientside
