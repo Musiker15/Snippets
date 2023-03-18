@@ -3,7 +3,7 @@
 * Seperate Ammunition with each weapon
 
 **IMPORTANT**
-* This is only tested with ESX 1.9.3
+* This is only tested with ESX 1.6.0, 1.7.5 and 1.9.3
 * Other versions might work...
 
 You can remove the prints :)
