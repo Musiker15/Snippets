@@ -112,7 +112,7 @@ function StartServerSyncLoops()
 	end
 end
 ```
-### Serverside - ESX 1.7.5 & ESX 1.6.0
+### Serverside - ESX 1.6.0 & ESX 1.7.5
 * Go to `es_extended/client/main.lua` and search for `function StartServerSyncLoops()`
 * Replace this function with this one below
 
