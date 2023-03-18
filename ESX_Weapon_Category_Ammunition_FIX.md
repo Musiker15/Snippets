@@ -6,8 +6,6 @@
 * This is only tested with ESX 1.6.0, 1.7.5 and 1.9.3
 * Other versions might work...
 
-You can remove the prints :)
-
 ## Installation
 ### Clientside
 * Go to `es_extended/server/main.lua` and search for `esx:updateWeaponAmmo` Event.
@@ -41,7 +39,7 @@ function StartServerSyncLoops()
 			currentWeapon[v.name].ammo = v.ammo
 			currentWeapon[v.name].name = v.name
 
-			print('Set Weapons on StartServerSyncLoops:', currentWeapon[v.name].name, currentWeapon[v.name].ammo)
+			--print('Set Weapons on StartServerSyncLoops:', currentWeapon[v.name].name, currentWeapon[v.name].ammo)
 		end
 
 		CreateThread(function()
@@ -59,7 +57,7 @@ function StartServerSyncLoops()
 								currentWeapon[weapon.name].ammo = currentWeapon[weapon.name].ammo - 1
 								TriggerServerEvent('esx:updateWeaponAmmo', weapon.name, currentWeapon[weapon.name].ammo)
 
-								print('Update Weapon while Shooting:', currentWeapon[weapon.name].name, currentWeapon[weapon.name].ammo)
+								--print('Update Weapon while Shooting:', currentWeapon[weapon.name].name, currentWeapon[weapon.name].ammo)
 							end
 						end
 					end
@@ -81,7 +79,7 @@ function StartServerSyncLoops()
 							currentWeapon[v.name].ammo = v.ammo
 							currentWeapon[v.name].name = v.name
 				
-							print('Set Weapons:', currentWeapon[v.name].name, currentWeapon[v.name].ammo)
+							--print('Set Weapons:', currentWeapon[v.name].name, currentWeapon[v.name].ammo)
 						end
 					end
 				end)
@@ -98,7 +96,7 @@ function StartServerSyncLoops()
 								if currentWeapon[weapon.name].ammo ~= GetAmmoInPedWeapon(ESX.PlayerData.ped, weaponHash) then
 									TriggerServerEvent('esx:updateWeaponAmmo', weapon.name, currentWeapon[weapon.name].ammo)
 
-									print('Update Weapon:', currentWeapon[weapon.name].name, currentWeapon[weapon.name].ammo)
+									--print('Update Weapon:', currentWeapon[weapon.name].name, currentWeapon[weapon.name].ammo)
 								end
 							end
 
@@ -128,7 +126,7 @@ function StartServerSyncLoops()
 			currentWeapon[v.name].ammo = v.ammo
 			currentWeapon[v.name].name = v.name
 
-			print('Set Weapons on StartServerSyncLoops:', currentWeapon[v.name].name, currentWeapon[v.name].ammo)
+			--print('Set Weapons on StartServerSyncLoops:', currentWeapon[v.name].name, currentWeapon[v.name].ammo)
 		end
 
 		CreateThread(function()
@@ -146,7 +144,7 @@ function StartServerSyncLoops()
 								currentWeapon[weapon.name].ammo = currentWeapon[weapon.name].ammo - 1
 								TriggerServerEvent('esx:updateWeaponAmmo', weapon.name, currentWeapon[weapon.name].ammo)
 
-								print('Update Weapon while Shooting:', currentWeapon[weapon.name].name, currentWeapon[weapon.name].ammo)
+								--print('Update Weapon while Shooting:', currentWeapon[weapon.name].name, currentWeapon[weapon.name].ammo)
 							end
 						end
 					end
@@ -168,7 +166,7 @@ function StartServerSyncLoops()
 							currentWeapon[v.name].ammo = v.ammo
 							currentWeapon[v.name].name = v.name
 				
-							print('Set Weapons:', currentWeapon[v.name].name, currentWeapon[v.name].ammo)
+							--print('Set Weapons:', currentWeapon[v.name].name, currentWeapon[v.name].ammo)
 						end
 					end
 				end)
@@ -185,7 +183,7 @@ function StartServerSyncLoops()
 								if currentWeapon[weapon.name].ammo ~= GetAmmoInPedWeapon(ESX.PlayerData.ped, weaponHash) then
 									TriggerServerEvent('esx:updateWeaponAmmo', weapon.name, currentWeapon[weapon.name].ammo)
 
-									print('Update Weapon:', currentWeapon[weapon.name].name, currentWeapon[weapon.name].ammo)
+									--print('Update Weapon:', currentWeapon[weapon.name].name, currentWeapon[weapon.name].ammo)
 								end
 							end
 
