@@ -23,7 +23,7 @@ AddEventHandler('esx:updateWeaponAmmo', function(weaponName, ammoCount)
     end
 end)
 ```
-### Clientside - ESX 1.9.3
+### Clientside - ESX 1.9.3 & ESX 1.9.4
 * Go to `es_extended/client/main.lua` and search for `function StartServerSyncLoops()`
 * Replace this function with this one below
 
