@@ -7,7 +7,7 @@
 * Other versions might work...
 
 ## Installation
-### Clientside
+### Serverside
 * Go to `es_extended/server/main.lua` and search for `esx:updateWeaponAmmo` Event.
 * Just add: `SetPedAmmo(GetPlayerPed(xPlayer.source), joaat(weaponName), ammoCount)`
 
@@ -23,7 +23,7 @@ AddEventHandler('esx:updateWeaponAmmo', function(weaponName, ammoCount)
     end
 end)
 ```
-### Serverside - ESX 1.9.3
+### Clientside - ESX 1.9.3
 * Go to `es_extended/client/main.lua` and search for `function StartServerSyncLoops()`
 * Replace this function with this one below
 
@@ -110,7 +110,7 @@ function StartServerSyncLoops()
 	end
 end
 ```
-### Serverside - ESX 1.6.0 & ESX 1.7.5
+### Clientside - ESX 1.6.0 & ESX 1.7.5
 * Go to `es_extended/client/main.lua` and search for `function StartServerSyncLoops()`
 * Replace this function with this one below
 
