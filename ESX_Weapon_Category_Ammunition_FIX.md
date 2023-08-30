@@ -23,7 +23,7 @@ AddEventHandler('esx:updateWeaponAmmo', function(weaponName, ammoCount)
     end
 end)
 ```
-### Clientside - ESX 1.9.3 & ESX 1.9.4
+### Clientside - ESX 1.9.3 & ESX 1.9.4 and above
 * Go to `es_extended/client/main.lua` and search for `function StartServerSyncLoops()`
 * Replace this function with this one below
 
@@ -106,6 +106,13 @@ function StartServerSyncLoops()
 
 				Wait(sleep)
 			end
+		end)
+
+		RegisterNetEvent('msk_weaponammo:updateAmmo')
+		AddEventHandler('msk_weaponammo:updateAmmo', function(weaponName, ammoToAdd)
+			if not currentWeapon[weaponName] then return end
+			currentWeapon[weaponName].ammo = currentWeapon[weaponName].ammo + ammoToAdd
+			--print('Update Weapon on Event (updateAmmo):', currentWeapon[weaponName].name, currentWeapon[weaponName].ammo)
 		end)
 	end
 end
@@ -193,6 +200,13 @@ function StartServerSyncLoops()
 
 				Wait(sleep)
 			end
+		end)
+
+		RegisterNetEvent('msk_weaponammo:updateAmmo')
+		AddEventHandler('msk_weaponammo:updateAmmo', function(weaponName, ammoToAdd)
+			if not currentWeapon[weaponName] then return end
+			currentWeapon[weaponName].ammo = currentWeapon[weaponName].ammo + ammoToAdd
+			--print('Update Weapon on Event (updateAmmo):', currentWeapon[weaponName].name, currentWeapon[weaponName].ammo)
 		end)
 	end
 
