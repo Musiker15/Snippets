@@ -1,5 +1,6 @@
 ### About
 This is [LegacyFuel by InZidiuZ](https://github.com/InZidiuZ/LegacyFuel) edited for ESX to solve the ESX Petrolcan Issue.
+
 You'll need our [Weapon_Category_Ammunition_FIX](https://github.com/Musiker15/Snippets/tree/main/ESX_Weapon_Category_Ammunition_FIX) to make it work! If you don't use our fix it won't work!
 
 ### Exports
