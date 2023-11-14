@@ -8,9 +8,8 @@
 * You can't have 2 Pistols, that doesn't work! But you can have 1 Pistol and 1 Combatpistol with different Ammunation.
 
 **Nice to know**
-With this Snippet, I fixed LegacyFuel *(Petrolcan Issue)* for ESX! 
-
-You can download it here: [LegacyFuel by InZidiuZ edited by Musiker15](https://github.com/Musiker15/Snippets/tree/main/LegacyFuel)
+* With this Snippet, I fixed LegacyFuel *(Petrolcan Issue)* for ESX! 
+* You can download it here: [LegacyFuel by InZidiuZ edited by Musiker15](https://github.com/Musiker15/Snippets/tree/main/LegacyFuel)
 
 ## Installation
 ### Serverside
